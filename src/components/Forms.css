@@ -1,0 +1,70 @@
+/* Contenedor principal del formulario */
+.form-container {
+  max-width: 600px; /* Limita el ancho máximo del formulario */
+  margin: 0 auto; /* Centra el formulario en la pantalla */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f9fa; /* Fondo claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para efecto */
+}
+
+/* Diseño responsivo del formulario */
+.form-responsive {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Espacio entre los elementos */
+}
+
+/* Personalización de los campos de entrada */
+.form-container .form-control {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ced4da; /* Bordes claros */
+}
+
+/* Estilo para el grupo de entrada */
+.form-container .input-group-text {
+  background-color: #e9ecef;
+  color: #495057;
+  font-weight: 500;
+  padding: 8px 12px;
+}
+
+/* Botón principal */
+.form-container button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 576px) {
+  .form-container {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .form-container .input-group-text {
+    font-size: 0.9rem; /* Disminuye el tamaño de fuente en pantallas pequeñas */
+  }
+
+  .form-container .form-control {
+    font-size: 0.9rem;
+  }
+
+  .form-container button[type="submit"] {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}

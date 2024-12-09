@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 450px;
+  min-height: 100vh;
+  font-size: 16px; /* Tamaño base en pantallas grandes */
+}
+
+/* Para pantallas más pequeñas, ajustamos el tamaño de la fuente */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Para pantallas más grandes, ajustamos el tamaño de la fuente */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,45 @@
+/* Centra la tabla y limita su ancho máximo en pantallas grandes */
+.table-container {
+  max-width: 95%; /* Limita el ancho de la tabla al 90% del contenedor */
+  margin: 0 auto; /* Centra la tabla */
+  padding: 16px; /* Añade un margen interno */
+}
+
+/* Responsividad de la tabla */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 8px; /* Bordes redondeados para la tabla */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para separarla del fondo */
+}
+
+/* Espaciado y estilo de las celdas */
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd; /* Bordes entre celdas */
+  white-space: nowrap;
+}
+
+.table th {
+  background-color: #f8f9fa; /* Color de fondo para encabezados */
+}
+
+@media (max-width: 576px) {
+  .table th,
+  .table td {
+    font-size: 0.8rem;
+  }
+}
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Espacio uniforme entre los elementos */
+}
+
+.pagination-info {
+  margin: 0 15px; /* Espacio adicional si lo necesitas */
+  font-size: 0.8rem;
+}
